@@ -3,14 +3,14 @@ import json
 def main():
     while True:
         try:
-            f = open("meses.txt", "r", encoding='utf-8')
-            linhas = f.readlines()
+            f = open("months.txt", "r", encoding='utf-8')
+            lines = f.readlines()
 
-            for linha in linhas:
-                print(linha.strip())
+            for line in lines:
+                print(line.strip())
             break
         except FileNotFoundError:
-            print("Arquivo não encontrado.")
+            print("File not found.")
 
 if __name__ == "__main__":
     main()
